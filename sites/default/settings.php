@@ -218,7 +218,7 @@ $databases = array (
     'default' => 
     array (
       'database' => 'democinit',
-      'username' => 'root',
+      'username' => 'democinit',
       'password' => 'root',
       'host' => 'localhost',
       'port' => '',
@@ -607,3 +607,7 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash sign to enable.
  */
 # $conf['theme_debug'] = TRUE;
+/**
+ * Add the domain module setup routine.
+ */
+include DRUPAL_ROOT . '/sites/all/modules/domain/settings.inc';
